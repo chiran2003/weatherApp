@@ -20,8 +20,8 @@
         <div class="card-flexdown" >
             <!-- current date and day -->
              <div class="card flex">
-                <h1>Monday</h1>
-                <h3>2024-09-12</h3>
+                <h1 id="currentday">Monday</h1>
+                <h3 id="currentdate">2024-09-12</h3>
              </div>
             <!-- current weather data -->
              <div class="card-flex" style="background:none;">
@@ -61,6 +61,8 @@
                     </div>
                 </div>
              </div>
+             <hr>
+             
             <!-- forcast 3 days -->
              <div class="flexCardBar" style="background:none;">
                 <!-- forcast day 1 -->
@@ -73,7 +75,7 @@
                     <!-- temperature -->
                     <div>
                         <h3>temperature</h3>
-                        <div class="card-flex" style="background: none;">
+                        <div class="card-flex" >
                             <i class="bi bi-thermometer-sun"></i> 
                             <h1>27</h1>
                         </div>
@@ -105,7 +107,7 @@
                     <!-- temperature -->
                     <div>
                         <h3>temperature</h3>
-                        <div class="card-flex" style="background: none;">
+                        <div class="card-flex" >
                             <i class="bi bi-thermometer-sun"></i> 
                             <h1>27</h1>
                         </div>
@@ -137,7 +139,7 @@
                     <!-- temperature -->
                     <div>
                         <h3>temperature</h3>
-                        <div class="card-flex" style="background: none;">
+                        <div class="card-flex" >
                             <i class="bi bi-thermometer-sun"></i> 
                             <h1>27</h1>
                         </div>
@@ -163,7 +165,7 @@
 
         </div>
         <!-- right card -->
-        <div class="flexdownCardBar">
+        <div class="flexdownCardBar" id="historycalDays">
             <!-- past day1 -->
             <div class="flexCardBar" >
                 <div>
