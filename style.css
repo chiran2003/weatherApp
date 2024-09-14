@@ -1,43 +1,69 @@
 body {
-    /* font-family: Arial, sans-serif; */
-    /* background-color: #f0f0f0; */
-    background-image: url("https://as1.ftcdn.net/v2/jpg/05/02/61/78/1000_F_502617818_hovgCFq8Q6iZjrKDZQnW3MzZSBe44ZiB.jpg");
+    font-family: Arial, sans-serif;
+    background-color: #2c90f5; 
     text-align: center;
     padding: 20px;
 }
 
-#weatherApp {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    /* display: inline-block;  */
-}
-
-
 .card-container {
+    background: none;
     display: grid;
-    gap: 20px;
+    gap: 0px;
     grid-template-columns: 1fr; /* Default for mobile */
     margin-top: 10px;
-}
+    padding: 10px;
+    border-radius: 10px;
+} 
 
-.card-content1{
-    display: flex;
-    gap: 10px;
-}
 
 .card {
-    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 5px rgba(245, 248, 248, 0.979);
     overflow: hidden;
     transition: transform 0.3s;
 }
+
 .card-content {
     padding: 15px;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     display: inline-block;
+}
+
+.card-flex{
+    display: flex;
+    background-color: rgba(234, 239, 240, 0.15);
+    padding: 10px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    size: inherit;
+}
+.card-flexdown{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(234, 239, 240, 0.15);
+    padding: 10px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    size: inherit;
+}
+.flexCardBar{
+    display: flex;
+    background-color: rgba(234, 239, 240, 0.15);
+    padding: 10px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    size: inherit;
+    
+}
+.flexdownCardBar{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(234, 239, 240, 0.15);
+    padding: 10px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    size: inherit;
+    gap: 5px;
 }
 
 .card h3 {
@@ -46,15 +72,16 @@ body {
     font-size: 1.2em;
 }
 
-
-.card:hover {
-    transform: translateY(-5px);
+fieldset{
+    background-color: rgba(234, 239, 240, 0.15);
+    border-radius: 8px;
 }
 
 /* Media Query for Tablets */
 @media (min-width: 600px) {
     .card-container {
         grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+        gap: 20px;
     }
 }
 
@@ -62,6 +89,7 @@ body {
 @media (min-width: 992px) {
     .card-container {
         grid-template-columns: repeat(2, 1fr); /* 3 columns on laptops/desktops */
+        gap: 20px;
     }
 }
 
