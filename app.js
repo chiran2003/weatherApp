@@ -28,7 +28,7 @@ function currentday(){
             document.getElementById('currenthumidity').innerHTML = `${data.current.humidity}%`;
             document.getElementById('currentwindSpeed').innerHTML = `${data.current.wind_kph} kph`;
 
-            const currentDate = new Date();
+            const currentDate = new Date(data.location.localtime);
             document.getElementById('currentday').innerHTML =`${currentDate.toLocaleString('en-US', { weekday: 'long' })}`;
             document.getElementById('currentdate').innerHTML =`${currentDate.toISOString().split('T')[0]}`;
 
@@ -107,4 +107,11 @@ async function historical() {
 
     // Update the DOM after all data is fetched
     document.getElementById('historycalDays').innerHTML = weatherData;
+}
+
+async function future() {
+    const apiKey = 'f9ae7eff7aea44298fb160050241209'; 
+    const location = document.getElementById('cityInput').value;
+    const currentDate = new Date();
+    let weatherData = ''; // Change to 'let' to allow modification
 }
