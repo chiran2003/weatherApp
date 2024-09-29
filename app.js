@@ -153,10 +153,10 @@ async function future() {
                             <h1>${data.forecast.forecastday[i].day.maxwind_kph}kph</h1>
                         </div>
                     </div>
+                </div>    
             ` 
             weatherData+=datas;           
         }
-
     }catch(error){
         console.log('Error fetching weather data:', error);
     }
